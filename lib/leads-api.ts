@@ -19,7 +19,7 @@ export class LeadApiError extends Error {
 }
 
 export async function submitDemoLead(payload: DemoLeadPayload): Promise<void> {
-  const res = await fetch('/backend/leads/demo', {
+  const res = await fetch('/api/demo', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
     body: JSON.stringify(payload),

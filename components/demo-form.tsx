@@ -141,8 +141,6 @@ export function DemoForm() {
 
 function friendlyError(err: LeadApiError): string {
   if (err.status === 429) return 'Muitas tentativas. Espere um minuto e tente de novo.';
-  if (/phone/i.test(err.message)) return 'Informe um WhatsApp com DDD.';
-  if (/consent/i.test(err.message)) return 'É preciso autorizar o contato para seguir.';
-  if (/email/i.test(err.message)) return 'Confira o e-mail.';
+  if (err.message) return err.message;
   return 'Não foi possível enviar o pedido. Tente de novo.';
 }
