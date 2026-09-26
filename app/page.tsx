@@ -5,9 +5,9 @@ const LOGIN_URL =
   process.env.NEXT_PUBLIC_APP_LOGIN_URL || 'http://localhost:3100/login';
 
 const PAINS = [
-  'O vendedor não alimenta o CRM a tempo. Sem informações, o gestor não sabe o que fazer.',
+  'O vendedor não alimenta o CRM a tempo. Sem informações, o gestor não tem como tomar uma decisão.',
   'O gestor e o vendedor precisam ficar revisando áudios e conversas para entender o que está acontecendo.',
-  'A tomada de decisão demora para acontecer por falta de informações.',
+  'A tomada de decisão demora para acontecer e a venda é perdida.',
 ];
 
 const SOLUTIONS = [
