@@ -13,17 +13,13 @@ export function BrandMark({
         className,
       ].join(' ')}
     >
-      <svg viewBox="0 0 32 32" className="size-[68%]" fill="none" aria-hidden>
+      <svg viewBox="0 0 32 32" className="size-[72%]" fill="none" aria-hidden>
         <path
-          d="M7 24V9.5C7 8.12 8.12 7 9.5 7H23"
+          d="M6.5 7.5 16 25.5 25.5 7.5"
           stroke="currentColor"
-          strokeWidth="3.2"
+          strokeWidth="3.4"
           strokeLinecap="round"
-        />
-        <path d="M8 16h10" stroke="currentColor" strokeWidth="3.2" strokeLinecap="round" />
-        <path
-          d="M18.5 5.5c0 3.3-1.8 5.5-5.5 5.5 0-3.4 1.9-5.5 5.5-5.5Z"
-          fill="currentColor"
+          strokeLinejoin="round"
         />
       </svg>
     </span>
