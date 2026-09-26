@@ -23,10 +23,26 @@ const plexMono = IBM_Plex_Mono({
   variable: '--font-plex-mono',
 });
 
+const title = 'O negócio acontece no WhatsApp do RTV. Você não vê. — Veros';
+const description =
+  'Áudio, objeção e “te retorno amanhã” ficam no celular. O Veros lê as conversas da revenda e mostra ao gestor o que fazer — sem o RTV preencher nada.';
+
 export const metadata: Metadata = {
-  title: 'O negócio acontece no WhatsApp do RTV. Você não vê. — Veros',
-  description:
-    'Áudio, objeção e “te retorno amanhã” ficam no celular. O Veros lê as conversas da revenda e mostra ao gestor o que fazer — sem o RTV preencher nada.',
+  title,
+  description,
+  applicationName: 'Veros',
+  openGraph: {
+    title,
+    description,
+    siteName: 'Veros',
+    locale: 'pt_BR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title,
+    description,
+  },
 };
 
 export const viewport: Viewport = {
