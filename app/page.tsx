@@ -11,9 +11,9 @@ const PAINS = [
 ];
 
 const SOLUTIONS = [
-  'Lê as conversas que o time já tem no WhatsApp. O vendedor ou gestor não preenchem nada.',
-  'Assunto da conversa é resumido, sem precisar ficar lendo conversas e ouvindo áudios novamente.',
-  'O gestor sabe exatamente o que está acontecendo com o cliente, sem precisar ficar revisando conversas e áudios.',
+  'Escaneia as negociações que seu time tem no WhatsApp. O vendedor ou gestor não precisam executar nenhuma ação.',
+  'Resume a conversa, te entrega um diagnóstico confiável da negociação e te auxilia nos próximos passos sem precisar ficar lendo mensagens e ouvindo áudios.',
+  'O gestor sabe exatamente o que está acontecendo com o cliente, com a sua equipe e sua pipeline de vendas, em tempo real.',
 ];
 
 const SOLUTION_KICKERS = ['', '', ''];
@@ -60,9 +60,9 @@ export default function LandingPage() {
             <span className="lg:mt-1 lg:block">O seu CRM não.</span>
           </h1>
           <p className="reveal-3 mt-6 max-w-xl text-[clamp(1.15rem,1.5vw,1.4rem)] font-medium leading-snug text-white/72">
-            Você só descobre que uma grande venda subiu{' '}
+            Você só descobre que uma grande venda foi para o ralo{' '}
             <br className="hidden sm:block" />
-            no telhado quando já é tarde demais.
+            quando já é tarde demais.
           </p>
           <p className="reveal-3 mt-8 max-w-2xl text-base leading-relaxed text-white/70">
             Transforme áudios soltos do WhatsApp em fatos comerciais estruturados.
@@ -78,7 +78,7 @@ export default function LandingPage() {
           <div className="min-w-0 lg:sticky lg:top-28 lg:col-span-4">
             <p className="eyebrow mb-4">O problema</p>
             <h2 className="max-w-full text-pretty font-display text-[clamp(1.9rem,2.5vw,2.85rem)] font-semibold leading-[1.08] tracking-[-0.035em]">
-              Quem controla a conversa é o vendedor. O gestor não vê.
+              Dados não chegam a tempo até você e quando chegam, estão incompletos.
             </h2>
           </div>
           <ol className="min-w-0 lg:col-span-8">
@@ -104,7 +104,7 @@ export default function LandingPage() {
           <div className="min-w-0 lg:sticky lg:top-28 lg:col-span-4">
             <p className="eyebrow mb-4 !text-crop">A solução</p>
             <h2 className="max-w-full text-pretty font-display text-[clamp(1.9rem,2.5vw,2.85rem)] font-semibold leading-[1.08] tracking-[-0.035em]">
-              O Veros lê a conversa. O painel diz o que fazer.
+              Tenha visibilidade total da sua pipeline de vendas em tempo real.
             </h2>
           </div>
           <ol className="min-w-0 lg:col-span-8">
