@@ -28,7 +28,7 @@ export default function LandingPage() {
           <div className="flex min-w-0 items-center gap-3">
             <BrandMark className="size-9 shrink-0" />
             <div className="min-w-0">
-              <div className="font-display text-[22px] leading-none tracking-[-0.04em]">Veros</div>
+              <div className="font-sans text-[22px] font-semibold leading-none tracking-[-0.06em]">Veros</div>
               <div className="mt-1 hidden text-[10px] font-semibold uppercase tracking-[0.16em] text-faint sm:block">
                 Inteligência comercial
               </div>
