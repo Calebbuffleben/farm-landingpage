@@ -1,20 +1,9 @@
-import Script from 'next/script';
+/** ID GA4 — snippet global no `<head>` do layout. */
+export const GA_MEASUREMENT_ID = 'G-18DPESPQBD';
 
-const MEASUREMENT_ID = 'G-18DPESPQBD';
-
-export function GoogleAnalytics() {
-  return (
-    <>
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${MEASUREMENT_ID}`}
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`window.dataLayer=window.dataLayer||[];
+export const GA_INLINE_INIT = `
+window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', '${MEASUREMENT_ID}');`}
-      </Script>
-    </>
-  );
-}
+gtag('config', '${GA_MEASUREMENT_ID}');
+`;

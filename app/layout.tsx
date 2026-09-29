@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { IBM_Plex_Mono, IBM_Plex_Sans, IBM_Plex_Serif } from 'next/font/google';
-import { GoogleAnalytics } from '@/components/google-analytics';
+import { GA_INLINE_INIT, GA_MEASUREMENT_ID } from '@/components/google-analytics';
 import './globals.css';
 
 const plexSans = IBM_Plex_Sans({
@@ -58,10 +58,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       lang="pt-BR"
       className={`${plexSans.variable} ${plexSerif.variable} ${plexMono.variable}`}
     >
-      <body className={plexSans.className}>
-        <GoogleAnalytics />
-        {children}
-      </body>
+      <head>
+        {/* Google tag (gtag.js) — no HTML inicial para o GA4 detectar a instalação */}
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+        />
+        <script dangerouslySetInnerHTML={{ __html: GA_INLINE_INIT }} />
+      </head>
+      <body className={plexSans.className}>{children}</body>
     </html>
   );
 }
