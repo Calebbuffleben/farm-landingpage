@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { IBM_Plex_Mono, IBM_Plex_Sans, IBM_Plex_Serif } from 'next/font/google';
+import { GoogleAnalytics } from '@/components/google-analytics';
 import './globals.css';
 
 const plexSans = IBM_Plex_Sans({
@@ -57,7 +58,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       lang="pt-BR"
       className={`${plexSans.variable} ${plexSerif.variable} ${plexMono.variable}`}
     >
-      <body className={plexSans.className}>{children}</body>
+      <body className={plexSans.className}>
+        <GoogleAnalytics />
+        {children}
+      </body>
     </html>
   );
 }
